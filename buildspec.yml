@@ -1,0 +1,20 @@
+version: 0.2
+phases:
+    install:
+        commands:
+            - yum update -y
+            - yum-config-manager --add-repo https://www.nasm.us/nasm.repo
+            - yum install  make   libogg-devel   libsqlite-devel   libxml2-devel   libjpeg-devel   openssl-devel   ncurses-devel   libuuid-devel   libtool   autoconf  git  wget   gcc   gcc-c++   pkgconfig   nasm   patch   screen
+
+           
+    build:
+        commands:
+            - echo Starting Java build at `date`
+            - make
+            
+        finally:
+            - echo Finished build of openh264
+            
+artifacts:
+    files:
+        - 'foo.bar'
