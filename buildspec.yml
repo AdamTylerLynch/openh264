@@ -3,7 +3,7 @@ phases:
     install:
         commands:
             - yum update -y
-            - yum install  make   libogg-devel   libsqlite-devel   libxml2-devel   libjpeg-devel   openssl-devel   ncurses-devel   libuuid-devel   libtool   autoconf  git  wget   gcc   gcc-c++   pkgconfig   patch   screen
+           
 
            
     build:
