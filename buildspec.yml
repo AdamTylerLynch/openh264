@@ -4,8 +4,6 @@ phases:
         commands:
             - yum update -y
            
-
-           
     build:
         commands:
             - echo Starting Java build at `date`
@@ -16,4 +14,5 @@ phases:
             
 artifacts:
     files:
-        - 'foo.bar'
+        - 'h264enc'
+        - 'h264dec'
